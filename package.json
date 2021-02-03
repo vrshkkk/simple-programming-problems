@@ -1,0 +1,23 @@
+{
+  "name": "simple-programming-problems",
+  "version": "1.0.0",
+  "description": "[List of simple programming problems](https://adriann.github.io/programming_problems.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrshkkk/simple-programming-problems.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vrshkkk/simple-programming-problems/issues"
+  },
+  "homepage": "https://github.com/vrshkkk/simple-programming-problems#readme",
+  "dependencies": {
+    "async-ask": "^1.2.0"
+  }
+}
