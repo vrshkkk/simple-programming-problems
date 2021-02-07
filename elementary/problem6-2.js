@@ -1,5 +1,22 @@
 const ask = require("async-ask");
 
+function getSum(thresholdNumber) {
+    let sum = 0;
+    for (let i = 1; i <= thresholdNumber; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+
+function getProduct(thresholdNumber) {
+    let product = 1;
+    for (let i = 1; i <= thresholdNumber; i++) {
+        product *= i;
+    }
+    return product;
+}
+
 async function main() {
     let n = Number(await ask('Enter number: '));
     if (isNaN(n)) {
@@ -10,32 +27,13 @@ async function main() {
     let request = await ask('Choose action:\n 1 - sum numbers\n 2 - multiply numbers\n');
 
     let result;
-
-    function getSum() {
-        let sum = 0;
-        for (let i = 1; i <= n; i++) {
-            sum += i;
-        }
-        result = sum;
-        return result;
-    }
-
-    function getProduct() {
-        let product = 1;
-        for (let i = 1; i <= n; i++) {
-            product *= i;
-        }
-        result = product;
-        return result;
-    }
-
     switch (request) {
         case '1':
-           getSum();
+            result = getSum(n);
             break;
 
         case '2':
-            getProduct();
+            result = getProduct(n);
             break;
 
         default:
